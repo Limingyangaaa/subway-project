@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>派出所警员列表</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/daterangepicker.css"/>
+	<body>
+		<div class="policeList monitorCom">
+			<header>
+				<span><a href="#" class="clickLink" index="policRTmonitoring">地铁在线警员</a></span>
+				<span><a href="#" class="active clickLink" index="polic">派出所值班警员</a></span>
+				<span><a href="#" class="clickLink" index="policRefer">警员查询</a></span>
+			</header>
+			<div class="content maxBox">
+				<!--<div class="content-left">
+					<div class="contentLeftBox">
+						<ul class="select_option">
+							<input type="button" id="selectVal" value="罗湖公交派出所" />
+						    <li class="dropdown">
+						        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						            <span><img class="caret" src="../../img/image 15.png"/></span></a>
+						        <ul class="dropdown-menu polic-menu">
+						            <li index="polic-1">
+						                <a>罗湖公交派出所</a></li>
+						            <li index="polic-2">
+						                <a>福田公交派出所</a></li>
+						            <li index="polic-3">
+						                <a>南山公交派出所</a></li>
+						            <li index="polic-4">
+						                <a>龙岗公交派出所</a></li>
+						            <li index="polic-5">
+						                <a>宝安公交派出所</a></li>
+						            <li index="polic-6">
+						                <a>龙华公交派出所</a></li>
+						            <li index="polic-7">
+						                <a>北站公交派出所</a></li>
+						            <li index="polic-8">
+						                <a>东站公交派出所</a></li>
+						            <li index="polic-9">
+						                <a>福永公交派出所</a></li>
+						            <li index="polic-10">
+						                <a>福田枢纽公交派出所</a></li>
+						            <li index="polic-11">
+						                <a>盐田公交派出所</a></li>
+						            <li index="polic-12">
+						                <a>坪山公交派出所</a></li>
+						            <li index="polic-13">
+						                <a>光明公交派出所</a></li>
+						            <li index="polic-14">
+						                <a>布吉公交派出所</a></li>
+						            <li index="polic-15">
+						                <a>香蜜湖公交派出所</a></li>
+						        </ul>
+						    </li>
+						</ul>
+						<div class="trafficIndex-policList1 trafficCom">
+							<div class="trafficIndexNav trafficNavCom">
+								<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 25.png"/></i>管辖站区图</span></span>
+							</div>
+							<div class="administerMap">
+								<img class="admin-map img-responsive" src="../../image/polic-1.png"/>
+							</div>
+						</div>
+						<div class="trafficIndex-policList2 trafficCom">
+							<div class="trafficIndexNav trafficNavCom">
+								<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>派出所基本信息</span></span>
+							</div>
+							<div class="basicInfo">
+								<div class="inlinepolic_chart infocon">
+
+									<img class="chart_img" src="../../img/image 28.png"/>
+
+									<div id="inlinePolicChart"></div>
+								</div>
+								<div class="dealnum_chart infocon">
+
+									<img class="chart_img" src="../../img/image 29.png"/>
+
+									<div id="dealNumChart"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<div style="width: 100%" class="content-right">
+					<div class="contentRightBox">
+						<div class="input-group" id="inputGroup2">
+		                    <span class="input-group-btn search-box">
+		                    	<span class="form-control" id="datetime" style="float:left"></span>
+		                       	<button class="btn btn-default" type="button" style="float:right;"><img class="img1" src="../../img/image 32.png"/></button>
+		                    </span>
+		                </div>
+						<ul class="select_option">
+							<input type="button" id="selectVal" value="罗湖公交派出所" />
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+									<span><img class="caret" src="../../img/image 15.png"/></span></a>
+								<ul class="dropdown-menu polic-menu">
+									<li index="polic-1">
+										<a>罗湖公交派出所</a></li>
+									<li index="polic-2">
+										<a>福田公交派出所</a></li>
+									<li index="polic-3">
+										<a>南山公交派出所</a></li>
+									<li index="polic-4">
+										<a>龙岗公交派出所</a></li>
+									<li index="polic-5">
+										<a>宝安公交派出所</a></li>
+									<li index="polic-6">
+										<a>龙华公交派出所</a></li>
+									<li index="polic-7">
+										<a>北站公交派出所</a></li>
+									<li index="polic-8">
+										<a>东站公交派出所</a></li>
+									<li index="polic-9">
+										<a>福永公交派出所</a></li>
+									<li index="polic-10">
+										<a>福田枢纽公交派出所</a></li>
+									<li index="polic-11">
+										<a>盐田公交派出所</a></li>
+									<li index="polic-12">
+										<a>坪山公交派出所</a></li>
+									<li index="polic-13">
+										<a>光明公交派出所</a></li>
+									<li index="polic-14">
+										<a>布吉公交派出所</a></li>
+									<li index="polic-15">
+										<a>香蜜湖公交派出所</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="topNav">
+							<li class="active click-topnav"><a href="#"><img src="../../img/image 27.png"/>派出所值班表</a></li>
+						</ul>
+						<div class="wacthList">
+							<!--<p>福永公交派出所值班安排表(2017.04.03-2014.04.09)</p>-->
+							<!--<table border="0" cellspacing="0" cellpadding="0">
+								<tr><th>时间</th><th>值班领导<br/>主班/副班</th><th>所值班民警</th><th>站区班次</th><th>碧头站</th><th>松岗站</th><th>后亭站</th><th>沙井站</th><th>马鞍山站</th><th>塘尾站</th></tr>
+								<tr><td class="td_time" rowspan="2">04:04<br/>星期一</td><td rowspan="2">艾泽拉/希克森</td><td class="td_A1" rowspan="2">辛吉斯</td><td><i><img src="../../img/image 30.png"/></i>早班</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td></tr>
+								<tr><td><i><img src="../../img/image 31.png"/>晚班</i></td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td></tr>
+								<tr><td class="td_time" rowspan="2">04:04<br/>星期一</td><td rowspan="2">艾泽拉/希克森</td><td class="td_A2" rowspan="2">辛吉斯</td><td><i><img src="../../img/image 30.png"/></i>早班</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td></tr>
+								<tr><td><i><img src="../../img/image 31.png"/>晚班</i></td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td></tr>
+								<tr><td class="td_time" rowspan="2">04:04<br/>星期一</td><td rowspan="2">艾泽拉/希克森</td><td class="td_A1" rowspan="2">辛吉斯</td><td><i><img src="../../img/image 30.png"/></i>早班</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td></tr>
+								<tr><td><i><img src="../../img/image 31.png"/>晚班</i></td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td></tr>
+								<tr><td class="td_time" rowspan="2">04:04<br/>星期一</td><td rowspan="2">艾泽拉/希克森</td><td class="td_A2" rowspan="2">辛吉斯</td><td><i><img src="../../img/image 30.png"/></i>早班</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td></tr>
+								<tr><td><i><img src="../../img/image 31.png"/>晚班</i></td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td></tr>
+								<tr><td class="td_time" rowspan="2">04:04<br/>星期一</td><td rowspan="2">艾泽拉/希克森</td><td class="td_A1" rowspan="2">辛吉斯</td><td><i><img src="../../img/image 30.png"/></i>早班</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td></tr>
+								<tr><td><i><img src="../../img/image 31.png"/>晚班</i></td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td></tr>
+								<tr><td class="td_time" rowspan="2">04:04<br/>星期一</td><td rowspan="2">艾泽拉/希克森</td><td class="td_A2" rowspan="2">辛吉斯</td><td><i><img src="../../img/image 30.png"/></i>早班</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td></tr>
+								<tr><td><i><img src="../../img/image 31.png"/>晚班</i></td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td><td>李晨</td></tr>
+								<tr><td class="td_time" rowspan="2">04:04<br/>星期一</td><td rowspan="2">艾泽拉/希克森</td><td class="td_A1" rowspan="2">辛吉斯</td><td><i><img src="../../img/image 30.png"/></i>早班</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td><td>刘传说</td></tr>
+							</table>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/polic-pliceList.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/moment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/daterangepicker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/dateSingle.js"></script>
+	</body>
+</html>

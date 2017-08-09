@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>同行人员</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="active clickLink" index="fellowWorkers">同行人员</a></span>
+				<span><a href="#" class="clickLink" index="highRiskPerson">高危重点人员</a></span>
+				<span><a href="#" class="clickLink" index="highFrequencyPlace">高发预警场所</a></span>
+				<span><a href="#" class="clickLink" index="warningTime">预警时间</a></span>
+				<span><a href="#" class="clickLink" index="warningNum">预警数量</a></span>
+				<span><a href="#" class="clickLink" index="jgfltj">籍贯分类统计</a></span>
+			</header>
+			<div class="content">
+				<div class="contentBox">
+					<div class="topSelect">
+						<div class="input-group inputGroup1">
+							<span>分析时段：</span>
+		                    <input type="text" class="form-control" readonly="readonly" placeholder="2017-02-17 00:00:00 - 2017-02-22 00:00:00">
+		                    <span class="input-group-btn">
+		                        <button class="btn btn-default" type="button"><img src="../../img/image 32.png"/></button>
+		                    </span>
+		                </div>
+		                <div class="input-group inputGroup2">
+							<span>所属辖区：</span>
+		                    <input type="text" class="form-control" readonly="readonly" value="">
+		                    <span class="input-group-btn">
+		                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+		                    </span>
+		                </div>
+		                <button type="button" class="btn btn-primary"><img src="../../img/image 33.png"/>查询</button>
+					</div>
+					<div class="search_result">
+						<ul class="topNav">
+							<li class="active"><a href="#"><img src="../../img/image 51.png"/>查询结果1</a></li>
+							<li><a href="#"><img src="../../img/image 50.png"/>查询结果2</a></li>
+						</ul>
+						<div class="searchCentent">
+							<div class="leftBox">
+								
+							</div>
+							<div class="rightBox">
+								<p><img src="../../img/icon3_active.png"/>&nbsp; 疑似团伙同行人员分析</p>
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr><th>辖区名称</th><th>发生场所</th><th>预警次数</th><th>预警人数</th><th>疑似团伙数</th></tr>
+									<tr><td>罗湖公交派出所</td><td>永康商务宾馆</td><td>21</td><td>21</td><td>6</td></tr>
+								</table>
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr><th>疑似团伙</th><th>团伙人数</th><th colspan="6">疑似团伙人员</th></tr>
+									<tr><td>团伙1</td><td>2</td><td>&nbsp;</td><td>&nbsp;</td><td>罗大力</td><td>王福泉</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+									<tr><td>团伙2</td><td>2</td><td>&nbsp;</td><td>&nbsp;</td><td>罗大力</td><td>王福泉</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+									<tr><td>团伙3</td><td>2</td><td>&nbsp;</td><td>&nbsp;</td><td>罗大力</td><td>王福泉</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+									<tr><td>团伙4</td><td>3</td><td>&nbsp;</td><td>张李叁</td><td>罗大力</td><td>王福泉</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+									<tr><td>团伙5</td><td>4</td><td>&nbsp;</td><td>张李叁</td><td>罗大力</td><td>王福泉</td><td>罗大力</td><td>&nbsp;</td></tr>
+									<tr><td rowspan="2">团伙6</td><td rowspan="2">8</td><td>&nbsp;</td><td>张李叁</td><td>罗大力</td><td>王福泉</td><td>罗大力</td><td>&nbsp;</td></tr>
+									<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td>张李叁</td><td>罗大力</td><td>王福泉</td><td>罗大力</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

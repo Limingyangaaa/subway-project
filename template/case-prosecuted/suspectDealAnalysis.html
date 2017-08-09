@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>侦办管理</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/daterangepicker.css"/>
+	<body>
+		<div class="high-riskPersonRefer monitorCom">
+			<header class="top-nav">
+				<span><a href="#" class="clickLink" index="caseAnalysis">案件打击分析</a></span>
+				<span><a href="#" class="clickLink" index="caseStatistics">案件打击统计</a></span>
+				<span><a href="#" class="clickLink" index="suspectDealRefer">嫌疑人处置查询</a></span>
+				<span><a href="#" class="clickLink active" index="suspectDealAnalysis">嫌疑人处置分析</a></span>
+			</header>
+			<div class="content">
+				<div class="contentBox getFocusPerson">
+					<div class="topSelect">
+						<div class="input-group inputGroup6">
+							<span>派出所：</span>
+							<span class="input-group-btn">
+		                    <input type="text" class="form-control" readonly="readonly" placeholder="选择派出所">
+		                     <button class="btn btn-default" type="button" data-toggle="dropdown"><img class="img1" src="../../img/image 15.png"/></button>
+		                     <ul class="dropdown-menu dropdown-menu-left">
+							    <li><a href="#">布吉公交派出所</a></li>
+								<li><a href="#">罗湖公交派出所</a></li>
+								<li><a href="#">龙华公交派出所</a></li>
+								<li><a href="#">宝安公交派出所</a></li>
+								<li><a href="#">南山公交派出所</a></li>
+								<li><a href="#">福田公交派出所</a></li>
+								<li><a href="#">龙岗公交派出所</a></li>
+								<li><a href="#">香蜜湖公交派出所</a></li>
+								<li><a href="#">坪山公交派出所</a></li>
+								<li><a href="#">东站公交派出所</a></li>
+								<li><a href="#">北站公交派出所</a></li>
+								<li><a href="#">福永公交派出所</a></li>
+								<li><a href="#">福田枢纽公交派出所</a></li>
+								<li><a href="#">光明公交派出所</a></li>
+								<li><a href="#">盐田公交派出所</a></li>								    
+							  	</ul>
+		                    </span>
+		                </div>
+						<div class="input-group inputGroup2">
+							<span>时间区间：</span>
+							<span class="input-group-btn search-box">
+		                    	<span class="form-control" id="datetime" style="float:left"></span>
+		                       	<button class="btn btn-default" type="button" style="float:right;"><img class="img1" src="../../img/image 32.png"/></button> 
+		                    </span>
+		                </div>
+		                
+
+		                
+		                <div class="input-group inputGroup3">
+							<span>嫌疑人分类：</span>
+							<span class="input-group-btn">
+		                    <input type="text" class="form-control" readonly="readonly" placeholder="分类">
+		                        <button class="btn btn-default" type="button" data-toggle="dropdown"><img class="img1" src="../../img/image 15.png"/></button>
+		                        <ul class="dropdown-menu dropdown-menu-left">
+							    	<li><a href="#">行拘人员</a></li>
+							    	<li><a href="#">逮捕人员</a></li>
+							    	<li><a href="#">刑拘人员</a></li>
+							    	<li><a href="#">强戒人员</a></li>										    
+							  	</ul>
+		                    </span>
+		                </div>
+		                 <div class="input-group inputGroup7">
+							<span>分析难度：</span>
+							<span class="input-group-btn">
+		                    <input type="text" class="form-control" readonly="readonly" placeholder="选择维度">
+		                     <button class="btn btn-default" type="button" data-toggle="dropdown"><img class="img1" src="../../img/image 15.png"/></button>
+		                     <ul class="dropdown-menu dropdown-menu-left">
+		                     		<li><a href="#">办案单位</a></li>
+		                     		<li><a href="#">处罚类型</a></li>		
+		                     		<li><a href="#">案件类型</a></li>
+							    	<li><a href="#">案件性质</a></li>
+							    	<li><a href="#">户籍</a></li>
+							    	<li><a href="#">性别</a></li>
+							    	<li><a href="#">年龄</a></li>									    
+							  	</ul>
+		                    </span>
+		                </div>
+		                <button type="button" class="btn btn-primary " id="checkBtn"><img src="../../img/image 33.png"/>查询</button>
+					</div>
+					<div class="chartBox" id="chartBox">
+						<div class="chartBoxL chart-page" id="chartBoxL">
+							
+						</div>
+						<div class="chartBoxR chart-page" id="chartBoxR">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/moment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/daterangepicker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/date.js"></script>
+		<script src="../../js/suspectDealAnalysis.js"></script>
+	</body>
+</html>

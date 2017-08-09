@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>智慧公安地铁防控指挥平台</title>
+		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/commom.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation"> 
+		    <div class="container-fluid"> 
+		        <div class="navbar-header"> 
+		            <a class="navbar-brand" href="#"><img class="logo-img" src="img/image 2.png"/>智慧公安地铁防控指挥平台</a> 
+		        </div> 
+		        <ul class="nav navbar-nav navbar-right"> 
+		        	<li>
+		        		<span class="time1">
+		        			<p><span class="years"></span>-<span class="month"></span>-<span class="day"></span></p>
+		        			<p><span class="week"></span></p>
+		        		</span>
+		        	</li>
+		        	<li>
+		        		<span class="time2">
+		        			<span class="hour"></span>:<span class="minute"></span>:<span class="second"></span>
+		        		</span>
+		        	</li>
+		        	<li><a href="#"><img class="userImg" src="#"/></a></li> 
+		            <li><a href="#"><span class="userName"></span>Admin</a></li>
+		        </ul> 
+		    </div> 
+		</nav>
+		<div class="container">
+			<div class="left-nav">
+				<div class="left-container">
+					<div class="dropdown dropheader">
+						<span class="MEAU"><i><img src="img/meau.png"/></i></span>
+					</div>
+					<div class="dropdown">
+					    <span class="traffic-monitoring conspan conspan-1 m-hover" sig="1" isdisable="disable"><i><img index="1" src="img/icon1_active.png"/></i>客流监控<i class="drop-img"><img src="img/image 15.png"/></i></span>
+					    <ul class="dropDown-menu">
+					        <li role="presentation" class="clickLink active m-hover" index="subTraffic">
+					            <a role="menuitem" href="#">地铁客流</a>
+					        </li>
+					        <li role="presentation" class="clickLink m-hover" index="pubTraffic">
+					            <a role="menuitem" href="#">公交客流</a>
+					        </li>
+					    </ul>
+					</div>
+					<div class="dropdown">
+					    <span class="policing-administration conspan m-hover" sig="1"><i><img index="2" src="img/icon2.png"/></i>警务管理<i class="drop-img"><img src="img/image 15.png"/></i></span>
+					    <ul class="dropDown-menu">
+					        <li role="presentation" class="clickLink m-hover" index="policingManage">
+					            <a role="menuitem" href="#">警员管理</a>
+					        </li>
+					        <li role="presentation" class="clickLink m-hover" index="warningManage">
+					            <a role="menuitem" href="#">警情管理</a>
+					        </li>
+					        <li role="presentation" class="clickLink m-hover" index="industryManage">
+					            <a role="menuitem" href="#">行业人员管理</a>
+					        </li>
+					        <li role="presentation" class="clickLink m-hover" index="recordManage">
+					            <a role="menuitem" href="#">核录管理</a>
+					        </li>
+					        <li role="presentation" class="clickLink m-hover" index="subMonitoring">
+					            <a role="menuitem" href="#">地铁监控</a>
+					        </li>
+					    </ul>
+					</div>
+					<div class="dropdown">
+					    <span class="key-personnel conspan m-hover" sig="1"><i><img index="3" src="img/icon3.png"/></i>重点人员<i class="drop-img"><img src="img/image 15.png"/></i></span>
+					    <ul class="dropDown-menu">
+					        <li role="presentation" class="clickLink m-hover" index="RTmonitoring">
+					            <a role="menuitem" href="#">重点人员监控</a>
+					        </li>
+					        <li role="presentation" class="clickLink m-hover" index="forewarningManage">
+					            <a role="menuitem" href="#">重点人员管理</a>
+					        </li>
+					         <li role="presentation" class="clickLink m-hover" index="forewarningRefer">
+					            <a role="menuitem" href="#">重点人员查询</a>
+					        </li>
+					    </ul>
+					</div>
+					<div class="dropdown">
+					    <span class="case-prosecuted conspan m-hover" sig="1"><i><img index="4" src="img/icon4.png"/></i>案件侦办<i class="drop-img"><img src="img/image 15.png"/></i></span>
+					    <ul class="dropDown-menu">
+					        <li role="presentation" class="clickLink m-hover" index="caseProsecuted">
+					            <a role="menuitem" href="#">预警管理</a>
+					        </li>
+					        <li role="presentation" class="clickLink m-hover" index="probingManage">
+					            <a role="menuitem" href="#">侦办管理</a>
+					        </li>
+					        <li role="presentation" class="clickLink m-hover" index="probingTool">
+					            <a role="menuitem" href="#">侦办工具</a>
+					        </li>
+					    </ul>
+					</div>
+					<div class="dropdown">
+					    <span class="personal-center conspan m-hover" sig="1"><i><img index="5" src="img/icon5.png"/></i>个人中心<i class="drop-img"><img src="img/image 15.png"/></i></span>
+					    <ul class="dropDown-menu">
+					        <li role="presentation" class="clickLink m-hover" index="personalCenter">
+					            <a role="menuitem" href="#">应用中心</a>
+					        </li>
+					    </ul>
+					</div>
+				</div>	
+			</div>
+			<div class="right-content">
+				<iframe id="iframe" src="template/traffic-monitoring/network-monitoring.html" frameBorder="0" width="100%" scrolling="auto" height="100%"></iframe>
+			</div>
+		</div>
+		<script src="js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/modernizr.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

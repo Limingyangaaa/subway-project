@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>侦办管理</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="high-riskPersonRefer monitorCom">
+			<header class="top-nav">
+				<span><a href="#" class="clickLink" index="caseAnalysis">案件打击分析</a></span>
+				<span><a href="#" class="clickLink" index="caseStatistics">案件打击统计</a></span>
+				<span><a href="#" class="active clickLink" index="suspectDealRefer">嫌疑人处置查询</a></span>
+				<span><a href="#" class="clickLink" index="suspectDealAnalysis">嫌疑人处置分析</a></span>
+			</header>
+			<div class="content">
+				<iframe src="http://10.42.77.245:8080/man/ajzb/getXjPerson?checkKey=1" frameBorder="0" width="100%" scrolling="auto" height="100%"></iframe>	
+			</div>
+		</div>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>	//$('.check-btn').click(function(){
+	//	var checkContent=$('.inputGroup4 input').val();
+	//	switch(checkContent){
+	//		case '派出所':var chartData={x:['派出所1', '派出所2', '派出所3', '派出所4', '派出所5', '派出所6', '派出所7','派出所8'],y:[120, 100, 170, 118, 110, 90, 115, 172]}
+	//						barChart('chart1_1',chartData);
+	//		case '线路':
+	//		case '站点':
+	//		case '警情性质':
+	//		case '警情类型':
+	//	}
+	//})
+		<meta charset="UTF-8">
+		<title>警情分析</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="./css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/monitoring.css"/>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="hover-show">警情地图</a><span class="bus-or-sub"><span class="clickLink" index="warningSubMap">警情地图</span><span class="clickLink" index="warningSubMap">地铁</span><span class="clickLink" index="warningBusMap">公交</span></span></span>
+				<span><a href="#" class="hover-show">警情查询</a><span class="bus-or-sub"><span class="clickLink" index="warningSubRefer">警情查询</span><span class="clickLink" index="warningSubRefer">地铁</span><span class="clickLink" index="warningBusRefer">公交</span></span></span>
+				<span><a href="#" class="clickLink active" index="warningAnalyz">警情分析</a></span>
+			</header>
+			<div class="content">
+				<div class="contentBox" style="border:1px solid red">
+					<div class="topSelect" style="border:1px solid red">
+						<div class="group" style="border:1px solid blue">
+							<span>状态：</span>
+							<div class="btn-group" style="border:1px solid purple;float:right">
+							  <button type="button" class="btn btn-danger">Action</button>
+							  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    <span class="caret"></span>
+							    <span class="sr-only">Toggle Dropdown</span>
+							  </button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li><a href="#">Separated link</a></li>
+							  </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/polic-warningAnalyze.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

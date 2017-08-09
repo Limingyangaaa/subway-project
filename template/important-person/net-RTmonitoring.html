@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>线网实时监控</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+	<style type="text/css">
+		.contentLeftBox > section{
+			width: 100%;
+			height: 100%;
+		}
+		#subwayMap{
+			width: 100%;
+			height: 100%;
+		}
+		div.netAKey{
+			height: -moz-calc(100% - 328px);height: -webkit-calc(100% - 328px);height: calc(100% - 328px);
+		}
+		.tableTr {cursor: pointer;}
+	</style>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="active clickLink" index="netRTmonitoring">线网实时监控</a></span>
+				<span><a href="#" class="clickLink" index="keyPersonnelDetails">重点人员详情</a></span>
+			</header>
+			<div class="content">
+				<div class="content-left">
+					<div class="contentLeftBox">
+						<section>
+							<embed id="subwayMap" type="image/svg+xml" class="svg-embed" src="../../svg/subway-2.0.svg"/>
+							<div class="tool-content">
+								<div class="legend-content">
+									<div class="legend">
+										<div class="legend-color flow-green"></div>
+										<p class="legend-text">舒适</p>
+									</div>
+									<div class="legend">
+										<div class="legend-color flow-yellow"></div>
+										<p class="legend-text">客流较多</p>
+									</div>
+									<div class="legend">
+										<div class="legend-color flow-red"></div>
+										<p class="legend-text">拥挤</p>
+									</div>
+								</div>
+							</div>
+							<div class="focus-tab-legend">
+								<div class="image-legend">
+									<div class="legend-img important-focus"></div>
+									<p class="legend-text">布控/重点关注</p>
+								</div>
+								<div class="image-legend">
+									<div class="legend-img normal-focus"></div>
+									<p class="legend-text">普通关注</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="contentRightBox">
+						<div class="traffic-right">
+							<div class="trafficMonitoring trafficCom">
+								<div class="trafficMonitoringNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>重点人员预警列表</span></span>
+								</div>
+								<div class="warningList">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<!--<tr><th>序号</th><th>姓名</th><th>预警时间<img src="../../img/image 45.png"></th><th>人员类型<img src="../../img/image 45.png"></th><th>预警类型<img src="../../img/image 45.png"></th></tr>
+										<tr><td>01</td><td>张大宝</td><td>2017-03-15 15:38</td><td>扒窃</td><td class="aType">A普通关注</td></tr>
+										<tr><td>02</td><td>张大宝</td><td>2017-03-15 15:38</td><td>扒窃</td><td class="bType">*布控</td></tr>
+										<tr><td>03</td><td>张大宝</td><td>2017-03-15 15:38</td><td>扒窃</td><td class="cType">C重点关注</td></tr>
+										<tr><td>04</td><td>张大宝</td><td>2017-03-15 15:38</td><td>扒窃</td><td class="cType">C重点关注</td></tr>-->
+									</table>
+								</div>
+							</div>
+							<div class="trafficIndex trafficCom netAKey">
+								<div class="trafficIndexNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>重点人员预警统计</span></span>
+								</div>
+								<div class="crew_chart">
+									<div id="crew_chart" style="width: 100%;height: 100%;"></div>
+								</div>
+							</div>
+							<div class="trafficRanking trafficCom" style="height: auto">
+								<div class="trafficRankingNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>预警类别统计</span></span>
+								</div>
+								<div class="type_box">
+									<div class="type_A"></div>
+									<div class="type_B"></div>
+									<div class="type_C"></div>
+									<div class="type_D"></div>
+									<div class="type_E"></div>
+									<p><span class="type_span"><span class="span-a span-con"></span>A类：<span class="span-anum">64</span>%</span><span class="type_span"><span class="span-b span-con"></span>B类：<span class="span-bnum">25</span>%</span><span class="type_span"><span class="span-c span-con"></span>C类：<span class="span-cnum">8</span>%</span><span class="type_span"><span class="span-d span-con"></span>布控：<span class="span-dnum">8</span>%</span><span class="type_span"><span class="span-e span-con"></span>其他：<span class="span-enum">0</span>%</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/svg-pan-zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/util/hammer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/util/snap.svg.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/svg/subway-svg.js"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/net-RTmonitoring.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

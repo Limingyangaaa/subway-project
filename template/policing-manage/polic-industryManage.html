@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>行内人员管理</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header class="top-nav">
+				<span><a href="#" class="active clickLink" index="gjqy">公交企业</a></span>
+				<span><a href="#" class="clickLink" index="ctqc">长途汽车</a></span>
+				<span><a href="#" class="clickLink" index="dlysqy">道路运输企业</a></span>
+				<span><a href="#" class="clickLink" index="wyc">网约车</a></span>
+				<span><a href="#" class="clickLink" index="czc">出租车</a></span>
+				<span><a href="#" class="clickLink" index="hnycry">行内异常人员</a></span>
+			</header>
+			<div class="content">
+				<div class="contentBox warningRefer">
+					<div class="wyc-block"></div>
+					<iframe id="rocordIframe" src="http://10.42.77.245:8080/man/gjfk/gjqy?falg=1" width="100%" height="100%"></iframe>	
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/polic-industryManage.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

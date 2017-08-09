@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>线网实时监控</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="active clickLink" index="networkMonitoring">线网实时监控</a></span>
+				<span><a href="#" class="clickLink" index="siteMonitoring">站点实时监控</a></span>
+				<span><a href="#" class="clickLink" index="traffiQcuery">客流查询</a></span>
+			</header>
+			<div class="content">
+				<div class="content-left">
+					<div class="contentLeftBox">
+						<section>
+						    <!--<embed id="demo-tiger" type="image/svg+xml" class="svg-embed" src="svg/subway-2.0.svg"/>-->
+						    <embed id="subwayMap" type="image/svg+xml" class="svg-embed" src="../../svg/subway-2.0.svg"/>
+						    <div class="tool-content">
+						        <div class="legend-content">
+						            <div class="legend">
+						                <div class="legend-color flow-green"></div>
+						                <p class="legend-text">舒适</p>
+						            </div>
+						            <div class="legend">
+						                <div class="legend-color flow-yellow"></div>
+						                <p class="legend-text">客流较多</p>
+						            </div>
+						            <div class="legend">
+						                <div class="legend-color flow-red"></div>
+						                <p class="legend-text">拥挤</p>
+						            </div>
+						        </div>
+						    </div>
+						    <div class="layer-tool-content" style="display: none">
+						    	<div class="layer-tool-control" id="layerToolControl"></div>
+						        <div class="layer-tool-body" id="layerToolBody">
+						            <div class="checkbox checkbox">
+						                <input type="radio" name="lineNo" class="line-radio" id="radio0" value="0" checked autocomplete="off">
+						                <label for="radio0" class="line-label">
+						                    <!--全网图-->
+						                    <span class="label-bg bg-line-all"></span>
+						                </label>
+						            </div>
+						            <div class="checkbox checkbox">
+						                <input type="radio" name="lineNo" class="line-radio" id="radio1" value="1" autocomplete="off">
+						                <label for="radio1" class="line-label">
+						                    <!--1号线-->
+						                    <span class="label-bg bg-line1"></span>
+						                </label>
+						            </div>
+						            <div class="checkbox checkbox">
+						                <input type="radio" name="lineNo" class="line-radio" id="radio2" value="2" autocomplete="off">
+						                <label for="radio2" class="line-label">
+						                    <!--2号线-->
+						                    <span class="label-bg bg-line2"></span>
+						                </label>
+						            </div>
+						            <div class="checkbox checkbox">
+						                <input type="radio" name="lineNo" class="line-radio" id="radio3" value="3" autocomplete="off">
+						                <label for="radio3" class="line-label">
+						                    <!--3号线-->
+						                    <span class="label-bg bg-line3"></span>
+						                </label>
+						            </div>
+						            <div class="checkbox checkbox">
+						                <input type="radio" name="lineNo" class="line-radio" id="radio4" value="4" autocomplete="off">
+						                <label for="radio4" class="line-label">
+						                    <!--4号线-->
+						                    <span class="label-bg bg-line4"></span>
+						                </label>
+						            </div>
+						            <div class="checkbox checkbox">
+						                <input type="radio" name="lineNo" class="line-radio" id="radio5" value="5" autocomplete="off">
+						                <label for="radio5" class="line-label">
+						                    <!--5号线-->
+						                    <span class="label-bg bg-line5"></span>
+						                </label>
+						            </div>
+						            <div class="checkbox checkbox">
+						                <input type="radio" name="lineNo" class="line-radio" id="radio7" value="7" autocomplete="off">
+						                <label for="radio7" class="line-label">
+						                    <!--7号线-->
+						                    <span class="label-bg bg-line7"></span>
+						                </label>
+						            </div>
+						            <div class="checkbox checkbox">
+						                <input type="radio" name="lineNo" class="line-radio" id="radio9" value="9" autocomplete="off">
+						                <label for="radio9" class="line-label">
+						                    <!--9号线-->
+						                    <span class="label-bg bg-line9"></span>
+						                </label>
+						            </div>
+						            <div class="checkbox checkbox">
+						                <input type="radio" name="lineNo" class="line-radio" id="radio11" value="11" autocomplete="off">
+						                <label for="radio11" class="line-label">
+						                    <!--11号线-->
+						                    <span class="label-bg bg-line11"></span>
+						                </label>
+						            </div>
+						        </div>
+						    </div>
+						</section>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="contentRightBox">
+						<div class="traffic-right">
+							<div class="trafficMonitoring trafficCom">
+								<div class="trafficMonitoringNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>客流监控</span></span>
+								</div>
+								<p class="p-details">已开通地铁线路<span class="lineNum">8</span>条&nbsp;站点<span class="siteNum">166</span>个&nbsp;换乘站<span class="transferNum">28</span>个</p>
+								<div class="num-show">
+									<div class="congestion show-box">
+										<p><i><img src="../../img/image 40.png"/></i><span>实时拥堵指数</span></p>
+										<span><i>&nbsp;&nbsp;&nbsp;&nbsp;</i><span class="index">-</span></span>
+										<div class="line_block">
+											<span class="span_green"></span>
+											<span class="span_yellow"></span>
+											<span class="span_red"></span>
+										</div>
+									</div>
+									<div class="travel show-box">
+										<p><i><img src="../../img/image 41.png"/></i><span>实时出行人数</span></p>
+										<span><span class="index">-</span>万</span>
+									</div>
+									<div class="onsite show-box">
+										<p><i><img src="../../img/image 42.png"/></i><span>实时站内人数</span></p>
+										<span><span class="index">-</span>万</span>
+									</div>
+								</div>
+							</div>
+							<div class="trafficIndex trafficCom">
+								<div class="trafficIndexNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>拥堵指数</span><span>出行人数</span><span>站内人数</span></span>
+								</div>
+								<div class="chartTravel1">
+									<div class="zs_tip">
+										<div class="red_bond"></div>
+										<div class="yellow_bond"></div>
+										<div class="green_bond"></div>
+									</div>
+									<div id="chartIndex" style="width: 100%;height: 100%;"></div>
+								</div>
+								<div class="chartTravel2">
+									<div id="chartPeopleNum" style="width: 100%;height: 100%;"></div>
+								</div>
+							</div>
+							<div class="trafficRanking trafficCom">
+								<div class="trafficRankingNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>实时客流排行</span><span>预测客流排行</span></span>
+								</div>
+								<div class="rankingChart rankingChart1">
+									<div id="chart_ranking1" style="width: 100%;height: 100%;"></div>
+									<ul class="select_option">
+										<input type="button" class="selectVal" value="站点客流排行" />
+									    <li class="dropdown">
+									        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+									            <span><img class="caret" src="../../img/image 15.png"/></span></a>
+									        <ul class="dropdown-menu">
+									            <li index="menu1">
+									                <a>站点客流排行</a></li>
+									            <li index="menu1">
+									                <a>区间客流排行</a></li>
+									        </ul>
+									    </li>
+									</ul>
+								</div>
+								<div class="rankingChart rankingChart2">
+									<div id="chart_ranking2" style="width: 100%;height: 100%;"></div>
+									<ul class="select_option">
+										<input type="button" class="selectVal" value="预测站点客流排行" />
+									    <li class="dropdown">
+									        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+									            <span><img class="caret" src="../../img/image 15.png"/></span></a>
+									        <ul class="dropdown-menu">
+									            <li index="menu2">
+									                <a>站点客流排行</a></li>
+									            <li index="menu2">
+									                <a>区间客流排行</a></li>
+									        </ul>
+									    </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/svg-pan-zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/util/hammer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/util/snap.svg.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/svg/subway-svg.js"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/network-monitoring.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

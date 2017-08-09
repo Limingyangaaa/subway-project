@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>警情分析</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/daterangepicker.css"/>
+	<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/moment.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/daterangepicker.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		.chartBox{
+			-webkit-text-size-adjust:none;
+		} 
+	</style>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="hover-show">警情地图</a><span class="bus-or-sub"><span class="clickLink" index="warningSubMap">警情地图</span><span class="clickLink" index="warningSubMap">地铁</span><span class="clickLink" index="warningBusMap">公交</span></span></span>
+				<span><a href="#" class="hover-show">警情查询</a><span class="bus-or-sub"><span class="clickLink" index="warningSubRefer">警情查询</span><span class="clickLink" index="warningSubRefer">地铁</span><span class="clickLink" index="warningBusRefer">公交</span></span></span>
+				<span><a href="#" class="clickLink active" index="warningAnalyz">警情分析</a></span>
+			</header>
+			<div class="content">
+				<div class="contentBox">
+					<div class="topSelect">
+						<div class="input-group inputGroup1">
+							<span>类型：</span>
+							<span class="input-group-btn">
+		                    <input type="text" class="form-control" readonly="readonly" value="地铁">
+		                        <button class="btn btn-default" type="button" data-toggle="dropdown"><img class="img1" src="../../img/image 15.png"/></button>
+		                        <ul class="dropdown-menu dropdown-menu-left">
+							    	<li><a href="#">地铁</a></li>
+							    	<li><a href="#">公交</a></li>						    
+							  	</ul>
+		                    </span>
+		                    
+		                </div>
+						<div class="input-group inputGroup2">
+							<span>时间区间：</span>
+							<span class="input-group-btn search-box">
+		                    	<span class="form-control" id="datetime" style="float:left"></span>
+		                       	<button class="btn btn-default" type="button" style="float:right;"><img class="img1" src="../../img/image 32.png"/></button> 
+		                    </span>
+		                </div>
+		                
+		                <div class="input-group inputGroup4">
+							<!--<span>分析维度：</span>
+							<span class="input-group-btn">
+		                    <input type="text" class="form-control" readonly="readonly" placeholder="派出所">
+		                     <button class="btn btn-default" type="button" data-toggle="dropdown"><img class="img1" src="../../img/image 15.png"/></button>
+		                     <ul class="dropdown-menu dropdown-menu-left">
+							    	<li><a href="#">派出所</a></li>
+							    	<li><a href="#">站点</a></li>
+							    	<li><a href="#">线路</a></li>
+							    	<li><a href="#">警情性质</a></li>
+							    	<li><a href="#">警情类型</a></li>										    
+							  	</ul>
+		                    </span>-->
+		                </div>
+		                <button type="button" class="btn btn-primary check-btn"><img src="../../img/image 33.png"/>查询</button>
+					</div>
+					<div class="chartBox" style='font-size:7px;-webkit-text-size-adjust:none;}' id='ppt'>
+							<!--<div id="chart1_1"></div>-->
+							<div id="chartsL" style="height:calc(100% - 42px);width:40%;float:left">
+								<div id="chartsLH" style='height:70%;width:100%;'></div>
+								<div id="chartsLF" style='height: 30%;width:100%;'>
+													                             
+								<div class="trafficRankingNav trafficNavCom" style="text-align:center;margin-top:4%;margin-bottom: 2%;">
+									<span class="spanNav"><span class="spanActive" style="text-align: center;color: rgba(56,140,254,1);font-size: 18px;font-weight: bold;">警情性质</span></span>
+								</div>
+								<div class="type_box" style='margin:auto'>
+									<div class="type_A"></div>
+									<div class="type_B"></div>
+									<div class="type_C"></div>
+									<div class="type_D"></div>
+									<div class="type_E"></div>
+									<p><span class="type_span"><span class="span-a span-con"></span>治安警情：<span class="span-anum">64</span>%</span><span class="type_span"><span class="span-b span-con"></span>刑事警情：<span class="span-bnum">25</span>%</span><span class="type_span"><span class="span-c span-con"></span>其他警情：<span class="span-cnum">8</span>%</span><span class="type_span"><span class="span-d span-con"></span>重复报警：<span class="span-dnum">8</span>%</span><span class="type_span"><span class="span-e span-con"></span>非地铁警情：<span class="span-enum">0</span>%</span></p>
+								</div>
+
+								</div>
+							</div>
+							<div id="chartsM" style="height: calc(100% - 42px);width:30%;float:left">
+								<div id="chartsMH" style='height:50%;'></div>
+								<div id="chartsMF" style='height:50%'></div>
+							</div>
+							<div id="chartsR" style="height: calc(100% - 42px);width:30%;float:left;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="../../js/polic-warningAnalyze.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/date.js"></script>
+	</body>
+</html>

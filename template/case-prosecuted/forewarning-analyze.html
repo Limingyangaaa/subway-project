@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>预警分析</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/daterangepicker.css"/>
+	<script src="../../js/lib/moment.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/daterangepicker.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<div class="high-riskPersonRefer monitorCom">
+			<header>
+				<span><a href="#" class="active clickLink" index="forewarningAnalyze">预警分析</a></span>
+				<span><a href="#" class="clickLink" index="forewarningRefers">预警查询</a></span>
+			</header>
+			<div class="content">
+				<div class="contentBox">
+					<div class="topSelect">
+		                <div class="input-group inputGroup6">
+							<span>派出所：</span>
+										<span class="input-group-btn">
+		                    <input type="text" class="form-control" readonly="readonly" placeholder="选择派出所" id="police-search">
+		                     <button class="btn btn-default" type="button" data-toggle="dropdown"><img class="img1" src="../../img/image 15.png"/></button>
+		                     <ul class="dropdown-menu dropdown-menu-left">
+													<li><a href="#">布吉公交派出所</a></li>
+													<li><a href="#">罗湖公交派出所</a></li>
+													<li><a href="#">龙华公交派出所</a></li>
+													<li><a href="#">宝安公交派出所</a></li>
+													<li><a href="#">南山公交派出所</a></li>
+													<li><a href="#">福田公交派出所</a></li>
+													<li><a href="#">龙岗公交派出所</a></li>
+													<li><a href="#">香蜜湖公交派出所</a></li>
+													<li><a href="#">坪山公交派出所</a></li>
+													<li><a href="#">东站公交派出所</a></li>
+													<li><a href="#">北站公交派出所</a></li>
+													<li><a href="#">福永公交派出所</a></li>
+													<li><a href="#">福田枢纽公交派出所</a></li>
+													<li><a href="#">光明公交派出所</a></li>
+													<li><a href="#">盐田公交派出所</a></li>   
+							  				</ul>
+		                  </span>
+		                </div>
+		                <div class="input-group inputGroup2">
+							<span>时间区间：</span>
+							<span class="input-group-btn search-box">
+		                    	<span class="form-control" id="datetime" style="float:left"></span>
+		                       	<button class="btn btn-default" type="button" style="float:right;"><img class="img1" src="../../img/image 32.png"/></button> 
+		                    </span>
+		                </div>
+		                <button type="button" class="btn btn-primary " id="checkBtn"><img src="../../img/image 33.png"/>查询</button>
+					</div>
+					<div class="chartBox">
+						<div class="chartBoxL">
+							<ul class="nav nav-tabs">
+							  <li role="presentation" class="active"><a href="#">高发预警场所</a></li>
+							  <li role="presentation"><a href="#">高危重点人员</a></li>
+							  <li role="presentation"><a href="#">高发预警籍贯</a></li>
+							</ul>
+							<div class="boxLeftChart" id="chart-A">
+							</div>
+						</div>
+						<div class="chartBoxR" >
+							<div class="chartBoxRH" id="chartBoxRH"></div>
+							<div class="chartBoxRF">
+								<div class="chartBoxRFL" id="chartBoxRFL"></div>
+								<div class="chartBoxRFR" id="chartBoxRFR"></div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/forewarning-analyze.js"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/date.js"></script>
+	</body>
+</html>

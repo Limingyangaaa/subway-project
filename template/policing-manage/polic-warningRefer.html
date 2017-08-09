@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>警情查询</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="hover-show">警情地图</a><span class="bus-or-sub"><span class="clickLink" index="warningSubMap">警情地图</span><span class="clickLink" index="warningSubMap">地铁</span><span class="clickLink" index="warningBusMap">公交</span></span></span>
+				<span><a href="#" class="hover-show active">警情查询</a><span class="bus-or-sub"><span class="clickLink" index="warningSubRefer">警情查询</span><span class="clickLink" index="warningSubRefer">地铁</span><span class="clickLink" index="warningBusRefer">公交</span></span></span>
+				<span><a href="#" class="clickLink" index="warningAnalyz">警情分析</a></span>
+				<!--<div class="btn-group">
+					<button class="btn btn-primary">地铁</button>
+					<button class="btn">公交</button>
+				</div>-->
+			</header>
+			<div class="content">
+				<div class="contentBox warningRefer">
+					<iframe id="referIframe" src="http://10.42.77.245:8080//man/dtfk/jqcx?checkKey=1" width="100%" height="100%"></iframe>	
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/polic-warningRefer.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

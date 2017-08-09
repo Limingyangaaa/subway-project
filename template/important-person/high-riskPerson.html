@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>高危重点人员</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="high-riskPerson monitorCom">
+			<header>
+				<span><a href="#" class="clickLink" index="fellowWorkers">同行人员</a></span>
+				<span><a href="#" class="active clickLink" index="highRiskPerson">高危重点人员</a></span>
+				<span><a href="#" class="clickLink" index="highFrequencyPlace">高发预警场所</a></span>
+				<span><a href="#" class="clickLink" index="warningTime">预警时间</a></span>
+				<span><a href="#" class="clickLink" index="warningNum">预警数量</a></span>
+				<span><a href="#" class="clickLink" index="jgfltj">籍贯分类统计</a></span>
+			</header>
+			<div class="content">
+				<div class="contentBox">
+					<div class="topSelect">
+						<div class="input-group inputGroup1">
+							<span>分析时段：</span>
+		                    <input type="text" class="form-control" readonly="readonly" placeholder="2017-02-17 00:00:00 - 2017-02-22 00:00:00">
+		                    <span class="input-group-btn">
+		                        <button class="btn btn-default" type="button"><img src="../../img/image 32.png"/></button>
+		                    </span>
+		                </div>
+		                <div class="input-group inputGroup2">
+							<span>所属辖区：</span>
+		                    <input type="text" class="form-control" readonly="readonly" value="">
+		                    <span class="input-group-btn">
+		                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+		                    </span>
+		                </div>
+		                <div class="input-group inputGroup5">
+							<span>统计方式：</span>
+		                    <div class="btn-group">
+							    <button type="button" class="btn btn-primary">人员</button>
+							    <button type="button" class="btn">派出所</button>
+							</div>
+		                </div>
+		                <button type="button" class="btn btn-primary clickLink" index="link_important5"><img src="../../img/image 33.png"/>查询</button>
+					</div>
+					<div class="search_result">
+						<ul class="topNav">
+							<li class="active"><a href="#"><img src="../../img/image 51.png"/>查询结果1</a></li>
+							<li><a href="#"><img src="../../img/image 50.png"/>查询结果2</a></li>
+						</ul>
+						<div class="searchCentent">
+							<div class="leftBox">
+								<div class="leftBt">
+									<div>
+										<p>预警人数</p>
+										<p><span>32</span>人</p>
+									</div>
+									<div>
+										<p>预警次数</p>
+										<p><span>3153</span>次</p>
+									</div>
+									<div>
+										<p>预警场所</p>
+										<p><span>21</span>个</p>
+									</div>
+								</div>
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr><th>序号</th><th>姓名</th><th>预警次数</th><th>预警场所</th><th>详情</th></tr>
+									<tr><td>01</td><td>张李叁</td><td>15</td><td>06</td><td><img src="../../img/image 52.png"/></td></tr>
+									<tr><td>02</td><td>张李叁</td><td>15</td><td>06</td><td><img src="../../img/image 52.png"/></td></tr>
+									<tr><td>03</td><td>张李叁</td><td>15</td><td>06</td><td><img src="../../img/image 52.png"/></td></tr>
+									<tr><td>04</td><td>张李叁</td><td>15</td><td>06</td><td><img src="../../img/image 52.png"/></td></tr>
+									<tr><td>05</td><td>张李叁</td><td>15</td><td>06</td><td><img src="../../img/image 52.png"/></td></tr>
+									<tr><td>06</td><td>张李叁</td><td>15</td><td>06</td><td><img src="../../img/image 52.png"/></td></tr>
+									<tr><td>07</td><td>张李叁</td><td>15</td><td>06</td><td><img src="../../img/image 52.png"/></td></tr>
+									<tr><td>08</td><td>张李叁</td><td>15</td><td>06</td><td><img src="../../img/image 52.png"/></td></tr>
+									<tr><td>09</td><td>张李叁</td><td>15</td><td>06</td><td><img src="../../img/image 52.png"/></td></tr>
+								</table>
+							</div>
+							<div class="rightBox">
+								<div id="warning_chart">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/high-riskPerson.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

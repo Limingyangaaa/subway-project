@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>重点人员查询</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="high-riskPersonRefer monitorCom">
+			<header>
+				<span><a href="#" class="active">重点人员查询</a></span>
+			</header>
+			<div class="content">
+				<div class="contentBox warningRefer">
+					<iframe id="rocordIframe" src="http://10.42.77.245:8080/man/gjfk/zdry?falg=1" width="100%" height="100%"></iframe>
+					<!--<div class="SelectBox">
+						<div class="inputBox">
+							<div class="input-group inputGroup1">
+								<span class="spanType1">姓名：</span>
+			                    <input type="text" class="form-control">
+			                </div>
+			                <div class="input-group inputGroup2">
+								<span class="spanType1">性别：</span>
+			                    <input type="text" class="form-control" readonly="readonly">
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+			                    </span>
+			                </div>
+			                <div class="input-group inputGroup3">
+								<span class="spanType2">出生：</span>
+			                    <input type="text" class="form-control" readonly="readonly">
+			                    	<span class="input-group-btn">
+				                        <button class="btn btn-default" type="button"><img src="../../img/image 32.png"/></button>
+				                    </span>
+			                </div>
+			                <div class="input-group inputGroup4">
+								<span class="spanType3">身份证号码：</span>
+			                    <input type="text" class="form-control">
+			                </div>
+			                <div class="input-group inputGroup5">
+								<span class="spanType4">多次被抓：</span>
+			                    <input type="text" class="form-control" readonly="readonly">
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+			                    </span>
+			                </div>
+			                <div class="input-group inputGroup6">
+								<span class="spanType4">人员类别：</span>
+			                    <input type="text" class="form-control" readonly="readonly">
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+			                    </span>
+			                </div>
+						</div>
+						<div class="inputBox inputBox2">
+							<div class="input-group inputGroup1">
+								<span class="spanType1">曾用名：</span>
+			                    <input type="text" class="form-control">
+			                </div>
+			                <div class="input-group inputGroup2">
+								<span class="spanType1">脸型：</span>
+			                    <input type="text" class="form-control" readonly="readonly">
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+			                    </span>
+			                </div>
+			                <div class="input-group inputGroup3">
+								<span class="spanType2">民族：</span>
+			                    <input type="text" class="form-control" readonly="readonly">
+			                    	<span class="input-group-btn">
+				                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+				                    </span>
+			                </div>
+			                <div class="input-group inputGroup4">
+								<span class="spanType3">户籍所在地：</span>
+			                    <input type="text" class="form-control">
+			                </div>
+			                <div class="input-group inputGroup5">
+								<span class="spanType4">人员类型：</span>
+			                    <input type="text" class="form-control" readonly="readonly">
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+			                    </span>
+			                </div>
+			                <div class="input-group inputGroup6">
+								<span class="spanType4">责任单位：</span>
+			                    <input type="text" class="form-control" readonly="readonly">
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+			                    </span>
+			                </div>
+						</div>
+						<div class="inputBox inputBox3">
+							<div class="input-group inputGroup1">
+								<span class="spanType1">别名：</span>
+			                    <input type="text" class="form-control">
+			                </div>
+			                <div class="input-group inputGroup2">
+								<span class="spanType1">绰号：</span>
+			                    <input type="text" class="form-control controlcom">
+			                </div>
+			                <div class="input-group inputGroup3">
+								<span class="spanType2">身高：</span>
+			                    <input type="text" class="form-control controlcom">
+			                </div>
+			                <div class="input-group inputGroup4">
+								<span class="spanType3">现居住地址：</span>
+			                    <input type="text" class="form-control">
+			                </div>
+			                <div class="input-group inputGroup5">
+								<span class="spanType4">人员状态：</span>
+			                    <input type="text" class="form-control" readonly="readonly">
+			                    <span class="input-group-btn">
+			                        <button class="btn btn-default" type="button"><img src="../../img/image 15.png"/></button>
+			                    </span>
+			                </div>
+			                <div class="input-group inputGroup6">
+								<span class="spanType4">责任人：</span>
+			                    <input type="text" class="form-control controlcom">
+			                </div>
+						</div>
+						<div class="inputBox inputBox4">
+							<button type="button" class="btn btn-primary"><img src="../../img/image 33.png"/> 查询</button>
+							<button type="button" class="btn btn-default"><img src="../../img/image 53.png"/> 重置</button>
+						</div>
+					</div>
+					<div class="search_result">
+						<ul class="topNav">
+							<li class="active"><a href="#"><img src="../../img/image 51.png"/>查询结果1</a></li>
+							<li><a href="#"><img src="../../img/image 50.png"/>查询结果2</a></li>
+						</ul>
+						<div class="searchTable">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr><th>序号</th><th>姓名</th><th>身份证号码</th><th>性别</th><th>出生年月</th><th>责任人</th><th>责任单位</th><th>人员类型</th><th>预警类型</th><th>审批状态</th><th class="lastT">创建时间</th></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_putong">A.普通关注</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_putong">A.普通关注</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_putong">A.普通关注</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_zhongdian">C.重点关注</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_putong">A.普通关注</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_zhongdian">C.重点关注</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_putong">A.普通关注</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_bukong">D.布控</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_putong">A.普通关注</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+								<tr><td>01</td><td>黄成港</td><td>45345919771021001X</td><td>男</td><td>1977-10-21</td><td>李王星</td><td>宝安公交派出所</td><td>扒窃</td><td class="type_zhongdian">C.重点关注</td><td>审批通过</td><td class="lastT">2017-02-17 14:34:20</td></tr>
+							</table>
+							<ul class="pagination">
+							    <li><a href="#">上一页</a></li>
+							    <li class="active"><a href="#">1</a></li>
+							    <li class="disabled"><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#">下一页</a></li>
+							</ul>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

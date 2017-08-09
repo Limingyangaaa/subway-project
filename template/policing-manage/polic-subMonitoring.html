@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>地铁监控</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="policeList monitorCom">
+			<header>
+				<span><a href="#" class="active clickLink" index="subMonitoring">地铁监控</a></span>
+			</header>
+			<div class="content">
+				<div class="content-left">
+					<div class="contentLeftBox">
+						<div class="input-select-box">
+							<div class="btn-group btn-group1">
+								<button type="button" class="btn btn-default btn1"><img src="../../img/line1.png"/></button>
+								<button type="button" class="btn btn-default dropdown-toggle" 
+										data-toggle="dropdown">
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu line-menu" role="menu">
+									<li index="line1"><a href="#"><img src="../../img/line1.png"/></a></li>
+									<li index="line2"><a href="#"><img src="../../img/line2.png"/></a></li>
+									<li index="line3"><a href="#"><img src="../../img/line3.png"/></a></li>
+									<li index="line4"><a href="#"><img src="../../img/line4.png"/></a></li>
+									<li index="line5"><a href="#"><img src="../../img/line5.png"/></a></li>
+									<li index="line7"><a href="#"><img src="../../img/line7.png"/></a></li>
+									<li index="line9"><a href="#"><img src="../../img/line9.png"/></a></li>
+									<li index="line11"><a href="#"><img src="../../img/line11.png"/></a></li>
+								</ul>
+							</div>
+			                <div class="btn-group">
+								<button type="button" class="btn btn2 btn-default">罗湖</button>
+								<button type="button" class="btn btn-default dropdown-toggle" 
+										data-toggle="dropdown">
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu site-menu" role="menu">
+									<!--<li><a href="#">车公庙站 </a></li>
+									<li><a href="#">科学馆站</a></li>
+									<li><a href="#">华强路站</a></li>
+									<li><a href="#">会展中心站</a></li>
+									<li><a href="#">岗厦站</a></li>
+									<li><a href="#">大剧院站</a></li>-->
+									<li><a href="#">罗湖</a><span style='display: none'>1268001000</span></li><li><a href="#">国贸</a><span style='display: none'>1268002000</span></li><li><a href="#">老街</a><span style='display: none'>1268003000</span></li><li><a href="#">大剧院</a><span style='display: none'>1268004000</span></li><li><a href="#">科学馆</a><span style='display: none'>1268005000</span></li><li><a href="#">华强路</a><span style='display: none'>1268006000</span></li><li><a href="#">岗厦</a><span style='display: none'>1268007000</span></li><li><a href="#">会展中心</a><span style='display: none'>1268008000</span></li><li><a href="#">购物公园</a><span style='display: none'>1268009000</span></li><li><a href="#">香蜜湖</a><span style='display: none'>1268011000</span></li><li><a href="#">车公庙</a><span style='display: none'>1268012000</span></li><li><a href="#">竹子林</a><span style='display: none'>1268013000</span></li><li><a href="#">侨城东</a><span style='display: none'>1268014000</span></li><li><a href="#">华侨城</a><span style='display: none'>1268015000</span></li><li><a href="#">世界之窗</a><span style='display: none'>1268016000</span></li><li><a href="#">白石洲</a><span style='display: none'>1268022000</span></li><li><a href="#">高新园</a><span style='display: none'>1268023000</span></li><li><a href="#">深大</a><span style='display: none'>1268024000</span></li><li><a href="#">桃园</a><span style='display: none'>1268025000</span></li><li><a href="#">大新</a><span style='display: none'>1268026000</span></li><li><a href="#">鲤鱼门</a><span style='display: none'>1268027000</span></li><li><a href="#">前海湾</a><span style='display: none'>1268028000</span></li><li><a href="#">新安</a><span style='display: none'>1268029000</span></li><li><a href="#">宝安中心</a><span style='display: none'>1268030000</span></li><li><a href="#">宝体</a><span style='display: none'>1268031000</span></li><li><a href="#">坪洲</a><span style='display: none'>1268032000</span></li><li><a href="#">西乡</a><span style='display: none'>1268033000</span></li><li><a href="#">固戍</a><span style='display: none'>1268034000</span></li><li><a href="#">后瑞</a><span style='display: none'>1268035000</span></li><li><a href="#">机场东</a><span style='display: none'>1268036000</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="table-list">
+							<p><span>场所编号</span><span>摄像头编号</span><span>摄像头点位</span><span>网络状态</span></p>
+							<div class="table">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<!--<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>
+									<tr><td>A-01</td><td>069</td><td>A-01</td><td>A-01</td></tr>-->
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="contentRightBox">
+						<iframe width="100%" height="100%" frameBorder="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/polic-subMonitoring.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

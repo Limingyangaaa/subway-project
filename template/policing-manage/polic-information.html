@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>警员基础信息</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="network-monitoring monitorCom policeDetail">
+			<header>
+				<span><a href="#" class="active clickLink" index="policRTmonitoring">地铁在线警员</a></span>
+				<span><a href="#" class="clickLink" index="polic">派出所值班警员</a></span>
+				<span><a href="#" class="clickLink" index="policRefer">警员查询</a></span>
+				<a class="a-back" href="#"><img src="../../img/image 24.png"/>返回</a>
+			</header>
+			<div class="content">
+				<div class="content-left">
+					<div class="contentLeftBox">
+						<iframe id="tracksdetail" src="http://10.204.113.243:8088/escopeweb/content/cn/wifi/tracksdetail.html?type=1&cardno=912358&stime=1480510800" width="100%" height="850px"></iframe>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="contentRightBox">
+						<div class="traffic-right">
+							<div class="basicInformation trafficCom">
+								<div class="trafficMonitoringNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>基础信息</span></span>
+								</div>
+								<div class="information">
+									<div class="polic_img">
+										<img src="#"/>
+									</div>
+									<div class="polic_massage">
+										<p><span class="spanL">姓名：<span class="polic_name">朱培瑜</span></span><span class="spanR">编号：<span class="polic_number">069787</span></span></p>
+										<p><span class="spanL">人员类型：<span class="polic_type">民警</span></span><span class="spanR">单位：<span class="polic_unit">北站派出所</span></span></p>
+										<p>巡查站点：<span class="bids"><button>深圳北站</button><button>长岭陂</button></span></p>
+										<p>
+											<span>手机：<span class="polic_tel">138-2373-6056</span></span>
+											<!--<i><img src="../../img/image 21.png"/></i>-->
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="trafficRanking trafficCom dutyHour">
+								<div class="trafficRankingNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>本班执勤统计</span></span>
+								</div>
+								<div class="site-cont">
+									<p class="p-cont"><span class="span-blue"></span> 巡查时间&nbsp;&nbsp;&nbsp;&nbsp;<span class="span-green"></span> 休息时间</p>
+									<div class="cont-box">
+										<div class="user-name">朱培瑜</div>
+										<div class="cont-time">
+											<p><span>3h</span><span>6h</span><span>9h</span><span>12h</span><span>15h</span><span>18h</span><span>21h</span><span>24h</span></p>
+											<table border="0" cellspacing="0" cellpadding="0">
+												<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+												<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+											</table>
+											<div class="time-bar"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="trafficIndex trafficCom dutyHourChart">
+								<div class="trafficIndexNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img class="icon_map" src="../../img/image 20.png"/></i>轨迹地图</span></span>
+								</div>
+								<div class="trajectory-chart">
+									<div id="trajectoryChart" style="width: 100%;height: 100%;"></div>
+								</div>
+								<div class="num-show">
+									<div class="congestion show-box">
+										<p><i><img src="../../img/icon41.png"/></i><span>站内巡查时间</span></p>
+										<span><span class="index xuncha-time">-</span>min</span>
+									</div>
+									<div class="travel show-box">
+										<p><i><img src="../../img/image 22.png"/></i><span>站内休息时间</span></p>
+										<span><span class="index xiuxi-time">-</span>min</span>
+									</div>
+									<div class="onsite show-box">
+										<p><i><img src="../../img/image 23.png"/></i><span>站内打卡次数</span></p>
+										<span><span class="index checkin">-</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/polic-information.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

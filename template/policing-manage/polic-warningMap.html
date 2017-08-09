@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>警情地图</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/YearMonthCanleder.css"/>
+	<body>
+		<div class="network-monitoring monitorCom policeSituation">
+			<header>
+				<span><a href="#" class="hover-show active">警情地图</a>
+				<span class="bus-or-sub">
+				<span class="clickLink" index="warningSubMap">警情地图</span>
+				<span class="clickLink" index="warningSubMap">地铁</span>
+				<span class="clickLink" index="warningBusMap">公交</span>
+				</span></span>
+				<span><a href="#" class="hover-show">警情查询</a>
+				<span class="bus-or-sub">
+				<span class="clickLink" index="warningSubRefer">警情查询</span>
+				<span class="clickLink" index="warningSubRefer">地铁</span>
+				<span class="clickLink" index="warningBusRefer">公交</span>
+				</span></span>
+				<span><a href="#" class="clickLink" index="warningAnalyz">警情分析</a></span>
+			</header>
+			<div class="content">
+				<div class="content-left">
+					<div class="contentLeftBox">
+						<input id="selectType" type="text" value="2016-02"/>
+						<iframe id="mapIframe" src="http://10.204.113.243:8080/police-situation-map/sub.html?date=2016-02" width="100%" height="100%"></iframe>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="contentRightBox">
+						<div class="traffic-right">
+							<div class="policwaringMap trafficCom">
+								<div class="trafficMonitoringNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>警情概况</span></span>
+								</div>
+								<div class="publicCoefficient">
+									<div class="passengerVolume">
+										<span class="passengerNum publicNCon">-</span><br />
+										<span>本月警情总数</span>
+									</div>
+									<div class="chainRdtio">
+										<span class="chainPercent publicNCon">-</span><br />
+										<span>环比</span>
+										<i><img src="../../img/image 43.png"/></i>
+									</div>
+									<div class="syntropy">
+										<span class="syntropyPercent publicNCon">-</span><br />
+										<span>同比</span>
+										<i><img src="../../img/image 44.png"/></i>
+									</div>
+								</div>
+							</div>
+							<div class="policList trafficCom policeSituationChart">
+								<div class="trafficMonitoringNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>警情类型</span></span>
+								</div>
+								<div id="warningTypeChart"></div>
+							</div>
+							<div class="policList trafficCom policeStationChart">
+								<div class="trafficMonitoringNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>本月派出所警情</span></span>
+								</div>
+								<div id="warningNumChart"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/YearMonthCanleder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/polic-warningMap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

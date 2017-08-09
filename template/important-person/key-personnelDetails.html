@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>重点人员详情</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<style>
+		.aKeyDetail{
+			height: -moz-calc(50% - 98px);height: -webkit-calc(50% - 98px);height: calc(50% - 98px);
+		}
+	</style>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="clickLink" index="netRTmonitoring">线网实时监控</a></span>
+				<span><a href="#" class="active clickLink" index="keyPersonnelDetails">重点人员详情</a></span>
+			</header>
+			<div class="content">
+				<div class="content-left">
+					<div class="contentLeftBox">
+						<!--公安内网IP：http://10.204.113.243:8088  外网测试ip：http://police.sibat.cn-->
+						<iframe id="littleMap" src="http://10.204.113.243:8088/escopeweb/content/cn/wifi/heatmapcamera.html?bid=1268008000" width="100%" height="100%" style="position: absolute;bottom: 0;right: 0;z-index: 100"></iframe>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="contentRightBox">
+						<div class="keyPersonnel traffic-right">
+							<div class="basicInformation trafficCom">
+								<div class="trafficMonitoringNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>基础信息</span></span>
+								</div>
+								<div class="information">
+									<div class="person_img">
+										<img src="#"/>
+									</div>
+									<div class="person_massage">
+										<!--<p><span class="spanL">姓名：<span class="">孙征海</span></span><span class="spanR">&nbsp;性别：<span class="sec">男</span></span></p>
+										<p><span>编号：<span class="">R4419675100002010020212</span></span></p>
+										<p><span class="spanL">出生日期：<span class="">19890821</span></span><span class="spanR">&nbsp;证件类别：<span class="">身份证</span></span></p>
+										<p><span>证件号码：<span class="">430519808216592</span></span><i><img src="../../img/image 21.png"/></i></p>-->
+									</div>
+								</div>
+							</div>
+							<div class="trafficIndex trafficCom aKeyDetail">
+								<div class="trafficIndexNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>关联分析</span></span>
+								</div>
+								<div class="releAnalyze">
+									
+								</div>
+							</div>
+							<div class="trafficRanking trafficCom">
+								<div class="trafficRankingNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>警情统计</span></span>
+								</div>
+								<div class="warningStat">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr><th>预警时间</th><th>预警站点</th><th>停留时间</th></tr>
+										<!--<tr><td>2017-03-15 15:38</td><td>深圳北</td><td>民乐</td><td>52min</td></tr>
+										<tr><td>2017-03-15 15:38</td><td>深圳北</td><td>民乐</td><td>52min</td></tr>
+										<tr><td>2017-03-15 15:38</td><td>深圳北</td><td>民乐</td><td>52min</td></tr>
+										<tr><td>2017-03-15 15:38</td><td>深圳北</td><td>民乐</td><td>52min</td></tr>
+										<tr><td>2017-03-15 15:38</td><td>深圳北</td><td>民乐</td><td>52min</td></tr>
+										<tr><td>2017-03-15 15:38</td><td>深圳北</td><td>民乐</td><td>52min</td></tr>
+										<tr><td>2017-03-15 15:38</td><td>深圳北</td><td>民乐</td><td>52min</td></tr>
+										<tr><td>2017-03-15 15:38</td><td>深圳北</td><td>民乐</td><td>52min</td></tr>
+										<tr><td>2017-03-15 15:38</td><td>深圳北</td><td>民乐</td><td>52min</td></tr>-->
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/key-personnelDetail.js"></script>
+	</body>
+</html>

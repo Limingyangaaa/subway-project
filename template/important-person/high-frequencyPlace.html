@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>高发预警场所</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="clickLink" index="fellowWorkers">同行人员</a></span>
+				<span><a href="#" class="clickLink" index="highRiskPerson">高危重点人员</a></span>
+				<span><a href="#" class="active clickLink" index="highFrequencyPlace">高发预警场所</a></span>
+				<span><a href="#" class="clickLink" index="warningTime">预警时间</a></span>
+				<span><a href="#" class="clickLink" index="warningNum">预警数量</a></span>
+				<span><a href="#" class="clickLink" index="jgfltj">籍贯分类统计</a></span>
+			</header>
+			<div class="content">
+				<div class="contentBox warningRefer">
+					<iframe id="rocordIframe" src="http://10.42.77.245:8080/man/ajzb/highFrequencyPlace" width="100%" height="100%"></iframe>	
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

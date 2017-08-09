@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>站点实时监控</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	<body>
+		<div class="network-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="active">站点实时监控</a></span>
+				<span><a href="#">客流查询</a></span>
+			</header>
+			<div class="content">
+				<div class="content-left">
+					<div class="contentLeftBox">
+						<div id="siteRTMap"></div>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="contentRightBox">
+						<div class="traffic-right">
+							<div class="siteMonitoring trafficCom">
+								<div class="trafficIndexNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>公交概况</span></span>
+								</div>
+								<div class="publicCoefficient">
+									<div class="passengerVolume">
+										<span class="passengerNum publicNCon">3081035</span><br />
+										<span>公交客运量</span>
+									</div>
+									<div class="chainRdtio">
+										<span class="chainPercent publicNCon">6.09%</span><br />
+										<span>环比</span>
+										<i><img src="../../img/image 43.png"/></i>
+									</div>
+									<div class="syntropy">
+										<span class="syntropyPercent publicNCon">1.03%</span><br />
+										<span>同比</span>
+										<i><img src="../../img/image 44.png"/></i>
+									</div>
+								</div>
+							</div>
+							<div class="trafficIndex-site-RT trafficCom">
+								<div class="trafficIndexNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>线路客流运量排行</span></span>
+								</div>
+								<div class="indexChart">
+									<div id="chart_lineRanking" style="width: 100%;height: 100%;"></div>
+								</div>
+							</div>
+							<div class="trafficRanking-site-RT trafficCom">
+								<div class="trafficRankingNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>站点客流量排行</span></span>
+								</div>
+								<div class="rankingChart">
+									<div id="chart_siteRanking" style="width: 100%;height: 100%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/site-RTmonitoring.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

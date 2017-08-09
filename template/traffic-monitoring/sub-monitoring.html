@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>地铁实时监控</title>
+		<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+	</head>
+	<body>
+		<div class="sub-monitoring monitorCom">
+			<header>
+				<span><a href="#" class="active">地铁实时监控</a></span>
+				<span><a href="#">常规公交实时监控</a></span>
+				<span><a href="#">指标查询</a></span>
+				<a class="a-back" href="#"><img src="../../img/image 24.png"/>返回</a>
+			</header>
+			<div class="content">
+				<div class="content-left">
+					<div class="contentLeftBox">
+						
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="contentRightBox">
+						<div class="traffic-right">
+							<div class="subMonitoring trafficCom">
+								<div class="trafficIndexNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>基础信息</span></span>
+								</div>
+								<div class="p-message">
+									<p>管辖派出所：北站公交派出所</p>
+									<p>管所属站区：北站站区</p>
+									<p>责任民警：吉军</p>
+									<p>责任民警电话：136-0962-7131<i><img src="../../img/image 45.png"/></i></p>
+								</div>
+								<div class="num-show">
+									<div class="congestion show-box">
+										<p><i><img src="#"/></i><span>实时站内客流</span></p>
+										<span><span class="index">36.5</span>万</span>
+									</div>
+									<div class="travel show-box">
+										<p><i><img src="#"/></i><span>实时进站客流</span></p>
+										<span><span class="index">20.7</span>万</span>
+									</div>
+									<div class="onsite show-box">
+										<p><i><img src="#"/></i><span>实时出站客流</span></p>
+										<span><span class="index">18.6</span>万</span>
+									</div>
+								</div>
+							</div>
+							<div class="trafficIndex trafficCom">
+								<div class="trafficIndexNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>站点客流</span><span>平均驻留时间</span><span>峰值客流密度</span></span>
+								</div>
+								<div class="passenger-chart">
+									<div class="passenger_chart">
+										<div class="yc-tip">
+											<span><span class="yellow-bar"></span><span class="yellow-text">&nbsp;预测值</span></span>
+										</div>
+										<div id="passengerChart" style="width: 100%;height: 100%;"></div>
+									</div>
+									<!--<ul class="select_option">
+										<input type="button" id="selectVal" value="进站客流" />
+									    <li class="dropdown">
+									        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+									            <span><img class="caret" src="../../img/image 15.png"/></span></a>
+									        <ul class="dropdown-menu">
+									            <li>
+									                <a>进站客流</a></li>
+									            <li>
+									                <a>出站客流</a></li>
+									        </ul>
+									    </li>
+									</ul>-->
+								</div>
+							</div>
+							<div class="trafficRanking trafficCom">
+								<div class="trafficRankingNav trafficNavCom">
+									<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 1.png"/></i>在线警员</span><span>重点人员</span><span>警情</span></span>
+								</div>
+								<div class="onlineTable">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr><th>人员类型</th><th>警员</th><th>警号</th><th>联系方式</th></tr>
+										<tr><td>民警</td><td>朱培瑜</td><td>069787</td><td>138-1373-6056</td></tr>
+										<tr><td>民警</td><td>朱培瑜</td><td>069787</td><td>138-1373-6056</td></tr>
+										<tr><td>民警</td><td>朱培瑜</td><td>069787</td><td>138-1373-6056</td></tr>
+										<tr><td>民警</td><td>朱培瑜</td><td>069787</td><td>138-1373-6056</td></tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/sub-monitoring.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

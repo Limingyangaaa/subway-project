@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>足迹档案</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/monitoring.css"/>
+    <style>
+        .calendar .explain{
+            height:30px;
+            line-height: 30px;
+            overflow: hidden;
+        }
+        .calendar .explain p{
+            float: right;
+            margin-right: 30px;
+            overflow: hidden;
+        }
+        .calendar .explain p span{
+            float: left;
+            height:30px;
+            line-height: 30px;
+        }
+        .calendar .explain  p span:nth-child(1){
+            margin: 7px;
+            height: 16px;
+            width: 16px;
+            background: #81C8F2;
+        }
+        .calendar .explain p span:nth-child(3){
+            margin: 7px 7px 7px 14px;
+            width: 16px;
+            height: 16px;
+            background: #C0CACC;
+        }
+        .policeList .contentRightBox .topNav li.click-topnav{
+            float: right;
+            margin-left: 15px;
+        }
+        .policeList .contentRightBox .topNav li:first-child{
+            margin-right: 80px;
+        }
+		#L_calendar ul li span.blackAndWhite {
+			background: url('../../image/datecolor.png') no-repeat;
+			width: 28px;
+			height: 28px;
+		}
+    </style>
+	<body>
+		<div class="policeList monitorCom duty-policeDetail">
+			<header>
+				<span><a href="#" class="clickLink" index="policRTmonitoring">地铁在线警员</a></span>
+				<span><a href="#" class="active clickLink" index="polic">派出所值班警员</a></span>
+				<span><a href="#" class="clickLink" index="policRefer">警员查询</a></span>
+				<a class="a-back" href="#"><img src="../../img/image 24.png"/>返回</a>
+			</header>
+			<div class="content">
+				<div class="content-left">
+					<div class="contentLeftBox">
+						<div class="footPrint trafficCom">
+							<div class="trafficIndexNav trafficNavCom">
+								<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>基础信息</span></span>
+							</div>
+							<div class="information">
+								<div class="polic_img">
+									<img src="#"/>
+								</div>
+								<div class="polic_massage">
+									<p><span class="spanL">姓名：<span class="polic_name">朱培瑜</span></span><span class="spanR">编号：<span class="polic_number">069787</span></span></p>
+									<p><span class="spanL">人员类型：<span class="polic_type">民警</span></span><span class="spanR">单位：<span class="polic_unit">北站派出所</span></span></p>
+									<p><span>手机：<span class="polic_tel">138-2373-6056</span></span></p>
+									<!--<p><i><img src="../../img/image 21.png"/></i></p>-->
+								</div>
+							</div>
+						</div>
+						<div class="trafficIndex trafficCom calendar">
+							<div class="trafficIndexNav trafficNavCom">
+								<span class="spanNav"><span class="spanActive"><i><img src="../../img/icon44.png"/></i>执勤日历</span></span>
+							</div>
+							<div class="lCalendar">
+								<div id="L_calendar">
+									<p><span id="L_calendarYears"></span>年<span id="L_calendarMonth"></span>月<img id="nextMonth" src="../../img/image 45.png" /><img id="beforeMonth" src="../../img/image 45.png" /></p>
+									<div id="L_calendarWeek"><ul><li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li><li>日</li></ul></div>
+									<div id="L_calendarDay"></div>
+								</div>
+                                <div class="explain">
+                                    <p>
+                                        <span></span>
+                                        <span>白班</span>
+                                        <span></span>
+                                        <span>晚班</span>
+                                    </p>
+                                </div>
+							</div>
+						</div>
+						<div class="trafficIndex trafficCom calendar">
+							<div class="trafficIndexNav trafficNavCom">
+								<span class="spanNav"><span class="spanActive"><i><img src="../../img/image 17.png"/></i>本月执勤统计</span></span>
+							</div>
+							<div class="monthStatistics ">
+								<div class="num-show">
+									<div class="congestion show-box">
+										<p><i><img src="../../img/image 23.png"/></i><span>本月排班天数</span></p>
+										<span><span class="index xuncha-time">22</span>天</span>
+									</div>
+									<div class="travel show-box">
+										<p><i><img src="../../img/image 23.png"/></i><span>本月执勤天数</span></p>
+										<span><span class="index xiuxi-time">21</span>天</span>
+									</div>
+									<div class="onsite show-box">
+										<p><i><img src="../../img/icon41.png"/></i><span>累计巡查时间</span></p>
+										<span><span class="index checkin">126</span>h</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="contentRightBox">
+						<ul class="topNav topNav2">
+                            <li class="click-topnav"><a href="#"><img src="../../img/image 37.png"/>综合排名</a></li>
+							<li class="active click-topnav"><a href="#"><img src="../../img/image 36.png"/>足印档案</a></li>
+						</ul>
+						<div class="policMsg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/lib/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/polic-footprint.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/router.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
